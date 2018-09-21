@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+<!---->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_phone_black_24dp"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/song_Name"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="8dp"
+        android:hint="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/positionBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/elapsedTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:11"
+            android:layout_marginLeft="40dp"/>
+        <TextView
+            android:id="@+id/remainingTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-1:49"
+            android:layout_marginLeft="240dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        //
+        <Button
+            android:visibility="gone"
+            android:onClick="playPrevious"
+            android:background="@drawable/ic_phone_black_24dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/btnPrevious"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+//
+        <Button
+            android:layout_marginStart="40dp"
+            android:id="@+id/playBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_phone_black_24dp"
+            android:layout_marginTop="40dp"
+            android:onClick="playBtnClick"
+            android:layout_marginLeft="40dp" />
+//
+        <Button
+            android:visibility="gone"
+            android:onClick="PlayNext"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/ic_phone_black_24dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/nextSongs"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+        //
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_phone_black_24dp"/>
+        <SeekBar
+            android:id="@+id/volumeBar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:progress="50"
+            android:max="100"/>
+        //
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_phone_black_24dp"/>
+    </LinearLayout>
+
+</LinearLayout>

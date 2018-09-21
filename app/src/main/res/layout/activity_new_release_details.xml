@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.70">
+    <ImageView
+        android:id="@+id/SongImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_phone_black_24dp"
+        android:background="#ffffff"
+        />
+
+
+        <TextView
+            android:id="@+id/songNamerelease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textColor="@color/white"
+            android:text="songName"
+            android:textSize="16sp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/playDurationrelease"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white" />
+
+        <SeekBar
+            android:id="@+id/seekBarrelease"
+            android:layout_width="0dp"
+            android:layout_weight="0.60"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/songDurationrelease"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!--<ImageButton
+            android:id="@+id/media_shufflerelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="shuffle"
+            android:background="@color/Transparent"
+            android:src="@drawable/ic_shuffle_black_24dp"
+            tools:ignore="OnClick,UnusedAttribute"
+            />-->
+
+        <ImageButton
+            android:id="@+id/media_rewrelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:onClick="rewind"
+            android:background="@color/Transparent"
+            android:src="@android:drawable/ic_media_rew"
+            tools:ignore="OnClick,UnusedAttribute" />
+
+        <ImageButton
+            android:id="@+id/media_pauserelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:onClick="pause"
+            android:background="@color/Transparent"
+            android:src="@android:drawable/ic_media_pause"/>
+
+        <ImageButton
+            android:id="@+id/media_playrelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:onClick="play"
+            android:background="@color/Transparent"
+            android:src="@android:drawable/ic_media_play"
+            tools:ignore="OnClick,UnusedAttribute"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/media_ffrelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:onClick="forward"
+            android:background="@color/Transparent"
+            android:src="@android:drawable/ic_media_ff"
+            tools:ignore="OnClick,UnusedAttribute" />
+
+        <!--<ImageButton
+            android:id="@+id/media_repeatrelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:onClick="repeat"
+            android:background="@color/Transparent"
+            android:src="@drawable/ic_repeat_black_24dp"
+            tools:ignore="OnClick,UnusedAttribute" />-->
+    </LinearLayout>
+
+</LinearLayout>
+
