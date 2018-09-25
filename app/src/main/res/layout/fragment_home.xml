@@ -39,20 +39,20 @@
                         android:paddingRight="4dp"
                         android:paddingTop="4dp"
                         tools:ignore="UnusedAttribute,UselessParent">
-//
+
                         <ImageView
                             android:id="@+id/image1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:scaleType="fitXY"
-                            android:src="@drawable/ic_phone_black_24dp"/>
-                        //
+                            android:src="@drawable/banner"/>
+
                         <ImageView
                             android:id="@+id/image2"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:scaleType="fitXY"
-                            android:src="@drawable/ic_phone_black_24dp"/>
+                            android:src="@drawable/sales"/>
 
                     </ViewFlipper>
 

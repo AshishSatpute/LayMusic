@@ -10,11 +10,11 @@
             android:title="Home"
             tools:ignore="HardcodedText"
             />
-        <item
+       <!-- <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_settings_black_24dp"
             android:title="Settings"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText" />-->
         <item
             android:id="@+id/nav_share"
             android:icon="@drawable/ic_menu_share"

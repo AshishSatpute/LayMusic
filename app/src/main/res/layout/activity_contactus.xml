@@ -6,4 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".navigation.Contactus">
 
+    <ImageView
+        android:id="@+id/ivlogo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/wpes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivlocation"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_email_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivlogo" />
+
+    <TextView
+        android:layout_margin="8dp"
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_worldplanetesolutions_com_n_info_worldplanetesolutions_com"
+        app:layout_constraintStart_toEndOf="@id/ivlocation"
+        app:layout_constraintTop_toBottomOf="@id/ivlocation" />
+
+
 </android.support.constraint.ConstraintLayout>

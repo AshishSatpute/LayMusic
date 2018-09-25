@@ -25,4 +25,8 @@
     <string name="playlist">Playlist</string>
     <string name="android_name">Android Name</string>
     <string name="search_here">Search Here</string>
+    <string name="enter_the_playlist_name">Enter the playlist name</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="contact_worldplanetesolutions_com_n_info_worldplanetesolutions_com">contact@worldplanetesolutions.com   info@worldplanetesolutions.com</string>
 </resources>
