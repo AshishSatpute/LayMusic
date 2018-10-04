@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.worldplanet.users.worldplanet">
+    package="com.worldplanet.users.wpes">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
-
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/lay_logo"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/lay_logo"
+        android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning,UnusedAttribute">
         <activity
-            android:name=".activity.LandingScreenActivity"
+            android:name="com.worldplanet.users.wpes.activity.LandingScreenActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -31,114 +31,114 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.worldplanet.users.wpes.activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".navigation.Nav_Settings" />
+        <activity android:name="com.worldplanet.users.wpes.navigation.Nav_Settings" />
         <activity
-            android:name=".navigation.Aboutus"
+            android:name="com.worldplanet.users.wpes.navigation.Aboutus"
             android:label="About LayMusic"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".navigation.Contactus"
+            android:name="com.worldplanet.users.wpes.navigation.Contactus"
             android:label="Contact us"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".categories.Category"
+            android:name="com.worldplanet.users.wpes.categories.Category"
             android:label="Categories"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.AllSongsActivity"
+            android:name="com.worldplanet.users.wpes.activity.AllSongsActivity"
             android:label="All Songs"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.PlaylistActivity"
+            android:name="com.worldplanet.users.wpes.activity.PlaylistActivity"
             android:label="Playlist"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.AlbumsActivity"
+            android:name="com.worldplanet.users.wpes.activity.AlbumsActivity"
             android:label="Albums"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.ArtistActivity"
+            android:name="com.worldplanet.users.wpes.activity.ArtistActivity"
             android:label="Artist"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.NewReleaseDetailsActivity"
+            android:name="com.worldplanet.users.wpes.activity.NewReleaseDetailsActivity"
             android:label="New Release"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.TopSongsDetailsActivity"
+            android:name="com.worldplanet.users.wpes.activity.TopSongsDetailsActivity"
             android:label="Top Songs"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.NewReleaseActivity"
+            android:name="com.worldplanet.users.wpes.activity.NewReleaseActivity"
             android:label="New Release"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.TopSongsActivity"
+            android:name="com.worldplanet.users.wpes.activity.TopSongsActivity"
             android:label="Top Songs"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.AllSongDetailsActivity"
+            android:name="com.worldplanet.users.wpes.activity.AllSongDetailsActivity"
             android:label="All Songs"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.ArtistsDetailsActivity"
+            android:name="com.worldplanet.users.wpes.activity.ArtistsDetailsActivity"
             android:label="Artists"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.AlbumsDetailsActivity"
+            android:name="com.worldplanet.users.wpes.activity.AlbumsDetailsActivity"
             android:label="Albums"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.CategoryActivity"
+            android:name="com.worldplanet.users.wpes.activity.CategoryActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.CategoryDetailsActivity"
+            android:name="com.worldplanet.users.wpes.activity.CategoryDetailsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.MoviesActivity"
+            android:name="com.worldplanet.users.wpes.activity.MoviesActivity"
             android:label="Movies"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.MovieDetailsActivity"
+            android:name="com.worldplanet.users.wpes.activity.MovieDetailsActivity"
             android:label="Movies"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.PlayMusicActivity"
+            android:name="com.worldplanet.users.wpes.activity.PlayMusicActivity"
             android:label="Lay Music"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.AndroidBuildingMusicPlayerActivity"
+            android:name="com.worldplanet.users.wpes.activity.AndroidBuildingMusicPlayerActivity"
             android:label="Lay Music"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.PlaylistSongsActivity"
+            android:name="com.worldplanet.users.wpes.activity.PlaylistSongsActivity"
             android:label="Playlist Song"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.PlayMusicActivity2" />
+        <activity android:name="com.worldplanet.users.wpes.activity.PlayMusicActivity2" />
     </application>
 
 </manifest>

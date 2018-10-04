@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/brown"
     android:orientation="vertical"
-    tools:context="com.worldplanet.users.worldplanet.activity.TopSongsActivity">
+    tools:context="com.worldplanet.users.wpes.activity.TopSongsActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

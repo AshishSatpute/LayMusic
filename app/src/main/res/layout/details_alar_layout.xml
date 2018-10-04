@@ -28,7 +28,7 @@
                 android:tag="image_tag"
                 android:layout_width="90dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/image"
+                android:src="@drawable/ic_music_note_black_24dp"
                 android:scaleType="fitXY"
                 />
 

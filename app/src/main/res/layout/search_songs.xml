@@ -23,7 +23,7 @@
         android:id="@+id/top_songs_image"
         android:layout_width="140dp"
         android:layout_height="70dp"
-        android:background="@drawable/image"
+        android:background="@drawable/ic_music_note_black_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/top_songs_Name"
         app:layout_constraintStart_toStartOf="parent"
